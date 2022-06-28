@@ -100,7 +100,7 @@ body {
   .first__rattings {
     display: none; }
   .first__offer {
-    height: 25%; } }
+    height: 10%; } }
 
 @media (max-width: 1000px) {
   .first__view {
@@ -109,6 +109,8 @@ body {
     flex-direction: column; } }
 
 @media (max-width: 550px) {
+  .first__call {
+    padding-top: 0; }
   .first__view {
     width: 100%; }
   .first__hotel {
@@ -596,79 +598,113 @@ body {
     color: white;
     background: #EC1F46;
     border-radius: 4px;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .other__description {
+    margin-bottom: 5%; } }
 
 .review {
-  background-color: #F5FAFE;
-  padding: 5% 10%;
   width: 100%; }
   .review__mcard {
+    padding: 5% 0%;
+    justify-content: center;
     display: flex; }
   .review__hats {
+    margin: 0;
+    background-color: #F5FAFE;
+    padding-top: 6%;
     padding-bottom: 6%;
     text-align: center;
     font-size: 36px;
     font-family: 'Mulish';
-    width: 100%;
-    margin: 0 auto; }
+    width: 100%; }
   .review__meg {
-    margin: 0 auto;
-    width: 100%;
     background-color: #F5FAFE; }
   .review__pic {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 70%; }
+    padding: 6%;
+    font-family: 'Mulish';
+    font-size: 18px;
+    width: 60%;
+    background-color: white; }
+  .review__img {
+    display: flex;
+    transform: translateY(-120px); }
+
+@media (max-width: 1400px) {
+  .review__img {
+    transform: translateY(-110px); } }
+
+@media (max-width: 1200px) {
+  .review__img {
+    transform: translateY(-100px); } }
+
+@media (max-width: 1000px) {
+  .review__img {
+    transform: translateY(-85px); } }
 
 @media (max-width: 777px) {
   .review__hats {
-    font-size: 26px; } }
+    font-size: 26px; }
+  .review__pic {
+    padding: 8%;
+    font-family: 'Mulish';
+    font-size: 12px;
+    width: 90%;
+    background-color: white; } }
 
 .newsletter {
   width: 100%; }
   .newsletter__send {
     width: 100%; }
 
-.active {
-  background-color: #F5FAFE;
-  padding-top: 5%;
+.active__cont {
+  background-color: #F5FAFE; }
+
+.active__scard {
+  display: flex;
+  justify-content: center; }
+
+.active__pict {
+  cursor: pointer;
+  display: flex;
+  justify-content: center; }
+
+.active__acard {
+  height: fit-content; }
+
+.active__descard {
+  width: 70%;
   padding-left: 10%;
-  padding-right: 10%;
+  color: white;
+  font-size: 20px;
+  font-family: 'Mulish';
+  transform: translateY(-130%); }
+
+.active__but {
+  color: white;
+  border: none;
+  background: #EC1F46;
+  border-radius: 4px;
+  padding: 3% 7%;
+  margin-top: 10%; }
+
+.active__img {
   width: 100%; }
-  .active__scard {
-    display: flex;
-    justify-content: center; }
-  .active__pict {
-    cursor: pointer;
-    display: flex;
-    justify-content: center; }
-  .active__acard {
-    height: fit-content; }
-  .active__descard {
-    width: 70%;
-    padding-left: 10%;
-    color: white;
-    font-size: 16px;
-    font-family: 'Mulish';
-    transform: translateY(-130%); }
-  .active__but {
-    color: white;
-    border: none;
-    background: #EC1F46;
-    border-radius: 4px;
-    padding: 3% 7%;
-    margin-top: 10%; }
-  .active__img {
-    width: 100%; }
-  .active__h1 {
-    font-size: 24px;
-    font-family: 'Mulish'; }
+
+.active__h1 {
+  padding-top: 5%;
+  font-size: 24px;
+  font-family: 'Mulish'; }
 
 @media (max-width: 1400px) {
   .active__pict {
     width: 100%; } }
 
 @media (max-width: 1200px) {
+  .active__descard {
+    font-size: 17px; }
   .active__pict {
     width: 100%; } }
 
@@ -682,9 +718,7 @@ body {
   .active__but {
     font-size: 12px; } }
 
-@media (max-width: 860px) {
-  .active__scard {
-    margin-bottom: -10%; }
+@media (max-width: 768px) {
   .active__pict {
     width: 110%; }
   .active__b {
@@ -704,13 +738,13 @@ body {
   .active__descard {
     transform: translateY(-150%); } }
 
-.footer {
-  background: #0A223D;
-  padding: 5% 7%;
-  width: 100%; }
-  .footer__foot {
-    cursor: pointer;
-    width: auto; }
+.footer__back {
+  padding: 10% 0%;
+  background: #0A223D; }
+
+.footer__foot {
+  cursor: pointer;
+  width: auto; }
 
 @media (max-width: 1400px) {
   .footer__foot {
